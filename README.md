@@ -1,12 +1,8 @@
-#Quer namorar comigo?
-
 <h4 align="center">
   ☕ Code and coffee
 </h4>
 
-## Tutorial no YouTube
-
-https://www.youtube.com/watch?v=8pceqyDXG78
+Projeto criado de forma recreativa para estudos com Python e PySide6
 
 ## Instalador para Windows
 
@@ -20,19 +16,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Python](https://python.org/)
 - [PySide6](https://www.qt.io/qt-for-python)
 
-## Screenshots
-
-Tela de escolha
-<h1 align="center">
-    <img alt="" title="#delicinha" src=".github/screen_1.png"/>
-</h1>
-
-Melhor decisão
-<h1 align="center">
-    <img alt="" title="#delicinha" src=".github/screen_2.png"/>
-</h1>
-
-
 ## Configuração do ambiente de desenvolvimento
 Para configurar o ambiente de desenvolvimento, por favor siga os passos abaixo.
 
@@ -44,14 +27,3 @@ Para configurar o ambiente de desenvolvimento, por favor siga os passos abaixo.
     * `pipenv install`
     * `pipenv shell`
     * `python3 main.py`
-
-## 🤔 Como contribuir
-
-- Faça um fork desse repositório;
-- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
-- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
-- Faça push para a sua branch: `git push origin minha-feature`;
-
-Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
-
-:. Feito com ♥ by Professor Luciano :wave: [Professor Luciano](https://pythonsimplificado.com.br/links)
