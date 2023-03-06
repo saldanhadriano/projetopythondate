@@ -21,9 +21,7 @@ Para configurar o ambiente de desenvolvimento, por favor siga os passos abaixo.
 
 1. Instale Python3, Pip3 e o Pipenv.
     * `pip3 install pipenv`
-2. Clone este repositório.
-    * `git clone git@github.com:professorlucianoz/Quer-Namorar-Comigo-PySide6-ou-PyQt6.git`
-3. Dentro do diretório do repositório, execute os seguintes comandos.
+2. Dentro do diretório do repositório, execute os seguintes comandos.
     * `pipenv install`
     * `pipenv shell`
     * `python3 main.py`
