@@ -4,11 +4,6 @@
 
 Projeto criado de forma recreativa para estudos com Python e PySide6
 
-## Instalador para Windows
-
-- [Baixe aqui o instalador](https://www.mediafire.com/file/qywp04xirqk3vt8/Instalador_Pedido.exe/file)
-
-
 ## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
