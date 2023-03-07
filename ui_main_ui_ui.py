@@ -25,6 +25,9 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(450, 438)
         MainWindow.setMaximumSize(QSize(450, 500))
+        icon = QIcon()
+        icon.addFile(u"icone.ico", QSize(), QIcon.Normal, QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setAutoFillBackground(False)
@@ -38,18 +41,36 @@ class Ui_MainWindow(object):
 "	color: rgb(255, 255, 255);\n"
 "}\n"
 "\n"
-"QPushButton{\n"
+"QPushButton#button_yes{\n"
+"	border: 1px solid;\n"
+"	border-color: purple;\n"
 "	font-size: 20px;\n"
 "	color: black;\n"
 "	min-height: 40px;\n"
 "	border-radius: 20px;\n"
 "	background-color: white;\n"
 "}\n"
-"")
+"\n"
+"QPushButton#button_no{\n"
+"	border: 1px solid;\n"
+"	border-color: purple;\n"
+"	font-size: 20px;\n"
+"	color: black;\n"
+"	min-height: 40px;\n"
+"	border-radius: 20px;\n"
+"	background-color: white;\n"
+"}")
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(10, 10, 431, 101))
-        self.label.setAlignment(Qt.AlignCenter)
+        self.label.setGeometry(QRect(10, 10, 431, 351))
+        font = QFont()
+        font.setBold(True)
+        font.setItalic(False)
+        font.setKerning(True)
+        self.label.setFont(font)
+        self.label.setAutoFillBackground(False)
+        self.label.setAlignment(Qt.AlignHCenter|Qt.AlignTop)
+        self.label.setWordWrap(False)
         self.frame_yes = QFrame(self.centralwidget)
         self.frame_yes.setObjectName(u"frame_yes")
         self.frame_yes.setGeometry(QRect(30, 160, 171, 101))
@@ -59,6 +80,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.button_yes = QPushButton(self.frame_yes)
         self.button_yes.setObjectName(u"button_yes")
+        font1 = QFont()
+        font1.setBold(True)
+        font1.setItalic(True)
+        self.button_yes.setFont(font1)
+        self.button_yes.setMouseTracking(False)
 
         self.horizontalLayout.addWidget(self.button_yes)
 
@@ -71,12 +97,17 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.button_no = QPushButton(self.frame_no)
         self.button_no.setObjectName(u"button_no")
+        font2 = QFont()
+        font2.setBold(True)
+        font2.setItalic(True)
+        font2.setStrikeOut(False)
+        self.button_no.setFont(font2)
 
         self.horizontalLayout_2.addWidget(self.button_no)
 
         self.coracao = QLabel(self.centralwidget)
         self.coracao.setObjectName(u"coracao")
-        self.coracao.setGeometry(QRect(90, 90, 281, 251))
+        self.coracao.setGeometry(QRect(85, 90, 281, 251))
         self.coracao.setStyleSheet(u"")
         self.coracao.setPixmap(QPixmap(u":/images/coracao.png"))
         self.coracao.setScaledContents(True)
@@ -224,6 +255,12 @@ class Ui_MainWindow(object):
         self.coracao_25.setStyleSheet(u"")
         self.coracao_25.setPixmap(QPixmap(u":/images/coracao.png"))
         self.coracao_25.setScaledContents(True)
+        self.coracao_26 = QLabel(self.centralwidget)
+        self.coracao_26.setObjectName(u"coracao_26")
+        self.coracao_26.setGeometry(QRect(185, 220, 81, 81))
+        self.coracao_26.setStyleSheet(u"")
+        self.coracao_26.setPixmap(QPixmap(u":/images/coracao.png"))
+        self.coracao_26.setScaledContents(True)
         MainWindow.setCentralWidget(self.centralwidget)
         self.coracao_25.raise_()
         self.coracao_24.raise_()
@@ -234,10 +271,6 @@ class Ui_MainWindow(object):
         self.coracao_6.raise_()
         self.coracao_10.raise_()
         self.coracao_16.raise_()
-        self.label.raise_()
-        self.frame_yes.raise_()
-        self.frame_no.raise_()
-        self.coracao.raise_()
         self.coracao_2.raise_()
         self.coracao_3.raise_()
         self.coracao_4.raise_()
@@ -253,6 +286,11 @@ class Ui_MainWindow(object):
         self.coracao_17.raise_()
         self.coracao_20.raise_()
         self.coracao_21.raise_()
+        self.coracao.raise_()
+        self.label.raise_()
+        self.frame_yes.raise_()
+        self.coracao_26.raise_()
+        self.frame_no.raise_()
 
         self.retranslateUi(MainWindow)
 
@@ -260,7 +298,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"s2", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Namora comigo?", None))
         self.button_yes.setText(QCoreApplication.translate("MainWindow", u"Sim :)", None))
         self.button_no.setText(QCoreApplication.translate("MainWindow", u"N\u00e3o", None))
@@ -289,5 +327,6 @@ class Ui_MainWindow(object):
         self.coracao_23.setText("")
         self.coracao_24.setText("")
         self.coracao_25.setText("")
+        self.coracao_26.setText("")
     # retranslateUi
 

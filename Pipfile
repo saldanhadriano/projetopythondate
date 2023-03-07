@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [scripts]
-designer = "/Users/lzembruzki/.local/share/virtualenvs/Voce-eh-Idiota-PySide6-ou-PyQt6-HXScgE2x/bin/pyside6-designer"
+designer = "C:/Users/Adriano/.virtualenvs/projetopythondate-vBcuOPyy/Lib/site-packages/PySide6/designer.exe"
 
 [packages]
 pyside6 = "*"
