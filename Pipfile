@@ -8,8 +8,9 @@ designer = "/Users/lzembruzki/.local/share/virtualenvs/Voce-eh-Idiota-PySide6-ou
 
 [packages]
 pyside6 = "*"
+pyside6-essentials = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
+python_version = "*"
