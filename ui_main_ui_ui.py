@@ -36,7 +36,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QLabel{\n"
-"	font-size: 40px;\n"
+"	font-size: 35px;\n"
 "	font-weight: bold;\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
@@ -299,7 +299,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"s2", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Namora comigo?", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Oi Gabi! Namora comigo?", None))
         self.button_yes.setText(QCoreApplication.translate("MainWindow", u"Sim :)", None))
         self.button_no.setText(QCoreApplication.translate("MainWindow", u"N\u00e3o", None))
         self.coracao.setText("")

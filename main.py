@@ -8,6 +8,7 @@ import random
 
 from ui_main_ui_ui import Ui_MainWindow
 
+#Gerar executavel: pyinstaller.exe --onefile --windowed --icone=icone.ico main.py
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
